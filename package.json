@@ -6,6 +6,7 @@
   "dependencies": {
     "JSON2": "0.1.0",
     "batch": "0.5.0",
+    "bluebird": "^2.9.14",
     "bouncy": "3.2.2",
     "browserify": "9.0.3",
     "browserify-istanbul": "0.1.5",
