@@ -19,6 +19,9 @@
   <script>
     var ZUUL = {};
     {{!-- Only add the support server port if it exists. Not using JSON.parse for backwards compatibility. --}}
+    {{#if config.autoreload}}
+        ZUUL.autoreload = {{config.autoreload}};
+    {{/if}}
     {{#if config.port}}
       ZUUL.port = {{config.port}};
     {{/if}}

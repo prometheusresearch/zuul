@@ -387,6 +387,16 @@ function plainString (mapped) {
     }
 }
 
+if (ZUUL.autoreload) {
+    var websocket = new WebSocket('ws://' + window.location.host);
+    websocket.onmessage = function(e) {
+        var data = JSON.parse(e.data);
+        if (data.command === 'refresh') {
+            window.location.reload();
+        }
+    };
+}
+
 function post_message(msg) {
     zuul_msg_bus.push(msg);
 }
