@@ -20,6 +20,7 @@ program
 .version(require('../package.json').version)
 .usage('[options] <files | dir>')
 .option('--ui <testing ui>', 'ui for tests (mocha-bdd, mocha-tdd, qunit, tape)')
+.option('--autoreload', 'autoreload tests on source changes')
 .option('--local [port]', 'port for manual testing in a local browser')
 .option('--tunnel [type]', 'establish a tunnel for outside access. only used when --local is specified')
 .option('--disable-tunnel', 'don\'t establish a tunnel for outside access. override any config in .zuul.yml and .zuulrc')
@@ -48,7 +49,8 @@ var config = {
     server: program.server,
     concurrency: program.concurrency,
     coverage: program.coverage,
-    open: program.open
+    open: program.open,
+    autoreload: program.autoreload
 };
 
 // Remove unspecified flags
@@ -193,6 +195,8 @@ if (config.builder) {
 
     config.builder = require.resolve(config.builder);
 }
+
+config.autoreload = config.autoreload || program.autoreload;
 
 var zuul = Zuul(config);
 

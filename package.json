@@ -38,6 +38,7 @@
     "tape": "3.5.0",
     "watchify": "2.3.0",
     "wd": "0.3.11",
+    "ws": "^0.7.1",
     "xtend": "2.1.2",
     "yamljs": "0.1.4",
     "zuul-localtunnel": "1.1.0"
