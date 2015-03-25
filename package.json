@@ -29,6 +29,8 @@
     "osenv": "0.0.3",
     "shallow-copy": "0.0.1",
     "shell-quote": "1.4.1",
+    "sockjs": "^0.3.15",
+    "sockjs-client": "^1.0.0-beta.12",
     "stack-mapper": "0.2.2",
     "stacktrace-js": "defunctzombie/stacktrace.js#07e7b95",
     "superagent": "0.15.7",

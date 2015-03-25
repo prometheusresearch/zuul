@@ -388,8 +388,9 @@ function plainString (mapped) {
 }
 
 if (ZUUL.autoreload) {
-    var websocket = new WebSocket('ws://' + window.location.host);
-    websocket.onmessage = function(e) {
+    var SockJS = require('sockjs-client');
+    var socket = new SockJS('http://' + window.location.host + '/channel');
+    socket.onmessage = function(e) {
         var data = JSON.parse(e.data);
         if (data.command === 'refresh') {
             window.location.reload();
