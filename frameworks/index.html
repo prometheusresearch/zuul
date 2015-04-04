@@ -7,15 +7,6 @@
 </head>
 <body>
   <div id="zuul"></div>
-
-  {{{user_html}}}
-
-  <script>{{{state}}}</script>
-
-  {{#each user_scripts}}
-  <script src="{{this}}"></script>
-  {{/each}}
-
   <script>
     var ZUUL = {};
     {{!-- Only add the support server port if it exists. Not using JSON.parse for backwards compatibility. --}}
@@ -23,6 +14,5 @@
       ZUUL.port = {{config.port}};
     {{/if}}
   </script>
-  <script src="/__zuul/framework.js"></script>
-  <script src="/__zuul/client.js"></script>
+  <script src="/__zuul/controller.js"></script>
 </body>

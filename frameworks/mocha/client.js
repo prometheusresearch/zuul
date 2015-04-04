@@ -1,4 +1,4 @@
-var ZuulReporter = require('../zuul');
+var ZuulReporter = require('../executor');
 
 // convert zuul mocha ui's to our ui
 var ui_map = {

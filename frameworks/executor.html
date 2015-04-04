@@ -1,0 +1,17 @@
+<!doctype html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+  {{{user_html}}}
+
+  <script>{{{state}}}</script>
+
+  {{#each user_scripts}}
+  <script src="{{this}}"></script>
+  {{/each}}
+
+  <script src="/__zuul/framework.js"></script>
+  <script src="/__zuul/client.js"></script>
+</body>
+

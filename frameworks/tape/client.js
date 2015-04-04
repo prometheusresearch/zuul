@@ -1,7 +1,7 @@
 var finished = require('tap-finished');
 var parser = require('tap-parser');
 
-var ZuulReporter = require('../zuul');
+var ZuulReporter = require('../executor');
 
 if (typeof global.console === 'undefined') {
     global.console = {};

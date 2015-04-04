@@ -1,4 +1,4 @@
-var ZuulReporter = require('../zuul');
+var ZuulReporter = require('../executor');
 var reporter = ZuulReporter(run);
 
 function ZuulJasmineReporter() {}
