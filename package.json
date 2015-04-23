@@ -32,12 +32,11 @@
     "sockjs": "^0.3.15",
     "sockjs-client": "^1.0.0-beta.12",
     "stack-mapper": "0.2.2",
-    "stacktrace-js": "defunctzombie/stacktrace.js#07e7b95",
+    "stacktrace-js": "http://github.com/defunctzombie/stacktrace.js/tarball/07e7b9516f1449f5c209e4f67f11a43f738c1712",
     "superagent": "0.15.7",
     "superstack": "0.0.4",
     "tap-finished": "0.0.1",
     "tap-parser": "0.7.0",
-    "tape": "3.5.0",
     "watchify": "2.3.0",
     "wd": "0.3.11",
     "ws": "^0.7.1",
@@ -49,7 +48,8 @@
     "after": "~0.8.1",
     "mocha": "~1.16.2",
     "phantomjs": "1.9.12",
-    "through2": "0.6.3"
+    "through2": "0.6.3",
+    "tape": "3.5.0"
   },
   "repository": {
     "type": "git",
